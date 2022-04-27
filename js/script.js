@@ -4,19 +4,43 @@ const navToggle = document.querySelector('.mobile-nav-toggle'),
     overlay = document.querySelector('.overlay');
 
 navToggle.addEventListener('click', () => {
-    // navToggle.classList.toggle('open');
+    document.body.classList.toggle('overflow-hidden');
 
-    if (navToggle.classList.contains('open')) {
-        navToggle.classList.remove('open');
+    if (nav.classList.contains('open')) {
         nav.classList.remove('open');
-        // links.classList.remove('nav-open');
+
+        links.classList.remove('fade-in');
+        links.classList.add('fade-out');
+
         overlay.classList.remove('fade-in');
         overlay.classList.add('fade-out');
     } else {
-        navToggle.classList.add('open');
-        // links.classList.add('nav-open');
         nav.classList.add('open');
+
+        links.classList.remove('fade-out');
+        links.classList.add('fade-in');
+
         overlay.classList.remove('fade-out');
         overlay.classList.add('fade-in');
     }
+
+    // if (navToggle.classList.contains('open')) {
+    //     navToggle.classList.remove('open');
+    //     nav.classList.remove('open');
+
+    //     links.classList.remove('fade-in');
+    //     links.classList.add('fade-out');
+
+    //     overlay.classList.remove('fade-in');
+    //     overlay.classList.add('fade-out');
+    // } else {
+    //     navToggle.classList.add('open');
+    //     nav.classList.add('open');
+
+    //     links.classList.remove('fade-out');
+    //     links.classList.add('fade-in');
+
+    //     overlay.classList.remove('fade-out');
+    //     overlay.classList.add('fade-in');
+    // }
 });

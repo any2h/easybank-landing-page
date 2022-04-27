@@ -93,6 +93,10 @@ dd {
   margin: 0;
 }
 
+h1, h2, h3 {
+  color: hsl(233deg, 26%, 24%);
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
@@ -112,6 +116,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+}
+body.overflow-hidden {
+  overflow: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -161,7 +168,7 @@ select {
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 700;
-  padding: 0.875rem 2rem;
+  padding: 0.75rem clamp(1.75rem, 3vw, 2rem);
   color: hsl(0deg, 0%, 100%);
   border: 0;
   border-radius: 50px;
@@ -180,6 +187,32 @@ select {
   font-size: 0.875rem;
   width: 100%;
 }
+.header nav.open .header-links {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 5.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  flex-flow: column;
+  align-items: center;
+  padding: 1.5rem;
+  color: hsl(233deg, 26%, 24%);
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+}
+.header nav.open .mobile-nav-toggle > span {
+  opacity: 1;
+  transform: rotate(37deg) translate(0, -1px);
+}
+.header nav.open .mobile-nav-toggle > span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.header nav.open .mobile-nav-toggle > span:last-child {
+  transform: rotate(-37deg) translate(0, -1px);
+}
 .header-links {
   gap: 2rem;
 }
@@ -187,6 +220,12 @@ select {
   position: relative;
   color: hsl(233deg, 8%, 62%);
   transition: color 0.3s ease-in-out;
+}
+@media (max-width: 63.9375em) {
+  .header-links > a {
+    color: hsl(233deg, 26%, 24%);
+    font-size: 1.125rem;
+  }
 }
 .header-links > a::before {
   content: "";
@@ -223,17 +262,6 @@ select {
 }
 .header .mobile-nav-toggle > span:nth-child(2) {
   transform-origin: 0% 100%;
-}
-.header .mobile-nav-toggle.open > span {
-  opacity: 1;
-  transform: rotate(37deg) translate(0, -1px);
-}
-.header .mobile-nav-toggle.open > span:nth-child(2) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-.header .mobile-nav-toggle.open > span:last-child {
-  transform: rotate(-37deg) translate(0, -1px);
 }
 .header .overlay {
   visibility: hidden;

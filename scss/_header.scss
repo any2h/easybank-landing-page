@@ -8,20 +8,41 @@
         font-size: $font-sm;
         width: 100%;
 
-        // &.open {
-        //     .header-links {
-        //         display: flex;
-        //         position: absolute;
-        //         top: 80px;
-        //         left: 1rem;
-        //         right: 1rem;
-        //         background: lightblue;
-        //         flex-flow: column;
-        //         align-items: center;
-        //         z-index: 1;
-        //         border-radius: 5px;
-        //     }
-        // }
+        &.open {
+            .header-links {
+                display: flex;
+                gap: 1rem;
+                // visibility: hidden;
+                // opacity: 0;
+                position: absolute;
+                z-index: 1;
+                top: 5.5rem;
+                left: 1.5rem;
+                right: 1.5rem;
+                flex-flow: column;
+                align-items: center;
+                padding: 1.5rem;
+                color: $dark-blue;
+                background-color: $white;
+                border-radius: 5px;
+            }
+
+            .mobile-nav-toggle {
+                > span {
+                    opacity: 1;
+                    transform: rotate(37deg) translate(0, -1px);
+                }
+    
+                > span:nth-child(2) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+    
+                > span:last-child {
+                    transform: rotate(-37deg) translate(0, -1px);
+                }
+            }
+        }
     }
 
     &-links {
@@ -31,6 +52,10 @@
             position: relative;
             color: $grayish-blue;
             transition: color .3s ease-in-out;
+            @include breakpoint-down(medium) {
+                color: $dark-blue;
+                font-size: $font-med;
+            }
 
             &::before {
                 content: '';
@@ -78,29 +103,21 @@
             transform-origin: 0% 100%;
         }
 
-        &.open {
-            > span {
-                opacity: 1;
-                transform: rotate(37deg) translate(0, -1px);
-            }
+        // &.open {
+        //     > span {
+        //         opacity: 1;
+        //         transform: rotate(37deg) translate(0, -1px);
+        //     }
 
-            > span:nth-child(2) {
-                opacity: 0;
-                transform: rotate(0deg) scale(0.2, 0.2);
-            }
+        //     > span:nth-child(2) {
+        //         opacity: 0;
+        //         transform: rotate(0deg) scale(0.2, 0.2);
+        //     }
 
-            > span:last-child {
-                transform: rotate(-37deg) translate(0, -1px);
-            }
-        }
-
-        // width: 2rem;
-        // aspect-ratio: 1;
-        // border: 0;
-        // background: transparent;
-        // background-image: url(/images/icon-hamburger.svg);
-        // background-repeat: no-repeat;
-        // background-position: center;
+        //     > span:last-child {
+        //         transform: rotate(-37deg) translate(0, -1px);
+        //     }
+        // }
     }
 
     .overlay {
