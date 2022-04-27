@@ -268,4 +268,23 @@ select {
   position: fixed;
   inset: 3.75rem 0 0;
   background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
+}
+
+.hero-image {
+  position: relative;
+  background-image: url(/images/bg-intro-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 17.5rem;
+}
+.hero-image::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/image-mockups.png);
+  background-position: center bottom 11%;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
