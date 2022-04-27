@@ -197,7 +197,7 @@ select {
   right: 1.5rem;
   flex-flow: column;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.75rem;
   color: hsl(233deg, 26%, 24%);
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
@@ -272,6 +272,7 @@ select {
 
 .hero-image {
   position: relative;
+  z-index: -2;
   background-image: url(/images/bg-intro-mobile.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -281,6 +282,7 @@ select {
 .hero-image::before {
   content: "";
   position: absolute;
+  z-index: -2;
   background-image: url(/images/image-mockups.png);
   background-position: center bottom 11%;
   background-repeat: no-repeat;
