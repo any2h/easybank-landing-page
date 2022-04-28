@@ -52,7 +52,7 @@
             position: relative;
             color: $grayish-blue;
             transition: color .3s ease-in-out;
-            @include breakpoint-down(medium) {
+            @include breakpoint-down(small) {
                 color: $dark-blue;
                 font-size: $font-med;
             }

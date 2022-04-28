@@ -1,3 +1,9 @@
+.container {
+    max-width: 75em;
+    margin-inline: auto;
+    // padding-inline: 2rem;
+}
+
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
@@ -8,13 +14,13 @@
 }
 
 .hide-for-mobile {
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(small) {
         display: none;
     }
 }
 
 .hide-for-desktop {
-    @include breakpoint-up(large) {
-        display: none;
+    @include breakpoint-up(medium) {
+        display: none !important;
     }
 }

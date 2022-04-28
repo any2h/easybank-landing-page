@@ -1,5 +1,10 @@
 /* Colors */
 /* Font-sizes */
+.container {
+  max-width: 75em;
+  margin-inline: auto;
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -9,15 +14,15 @@
   margin-top: var(--flow-space, 1rem);
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .hide-for-desktop {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -95,6 +100,8 @@ dd {
 
 h1, h2, h3 {
   color: hsl(233deg, 26%, 24%);
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -110,10 +117,10 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  min-height: 100vh;
   font-family: "Public Sans", sans-serif;
   font-size: 1.125rem;
   color: hsl(233deg, 8%, 62%);
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -221,7 +228,7 @@ select {
   color: hsl(233deg, 8%, 62%);
   transition: color 0.3s ease-in-out;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .header-links > a {
     color: hsl(233deg, 26%, 24%);
     font-size: 1.125rem;
@@ -289,4 +296,33 @@ select {
   background-size: 95%;
   height: 100%;
   width: 100%;
+}
+.hero-text {
+  --flow-space: 1.5rem;
+  text-align: center;
+  padding: 2.25rem 1.5rem;
+}
+.hero-text h1 {
+  font-size: 2.25rem;
+}
+.hero-text button {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 40em) {
+  .hero {
+    display: flex;
+    min-height: 42.5rem;
+  }
+  .hero-image {
+    order: 2;
+    flex: 3;
+    background: 0;
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-position: left 74%;
+  }
+  .hero-text {
+    flex: 2;
+    text-align: left;
+  }
 }/*# sourceMappingURL=styles.css.map */

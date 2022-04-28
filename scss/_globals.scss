@@ -21,6 +21,8 @@ dd {
 
 h1, h2, h3 {
     color: $dark-blue;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -36,10 +38,10 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+    min-height: 100vh;
     font-family: 'Public Sans', sans-serif;
     font-size: $font-med;
     color: $grayish-blue;
-    min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 
@@ -85,5 +87,22 @@ select {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
+    }
+}
+
+/* Buttons */
+.cta-btn {
+    cursor: pointer;
+    font-size: $font-sm;
+    font-weight: 700;
+    padding: 0.75rem clamp(1.75rem, 3vw, 2rem);
+    color: $white;
+    border: 0;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+        opacity: .6;
     }
 }
