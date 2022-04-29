@@ -1,8 +1,8 @@
 .hero {
+    background-color: $very-light-gray;
 
     &-image {
         position: relative;
-        z-index: -2;
         background-image: url(/images/bg-intro-mobile.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -12,9 +12,8 @@
         &::before {
             content: '';
             position: absolute;
-            z-index: -2;
             background-image: url(/images/image-mockups.png);
-            background-position: center bottom 11%;
+            background-position: center bottom 10%;
             background-repeat: no-repeat;
             background-size: 95%;
             height: 100%;
@@ -37,22 +36,58 @@
     }
 }
 
-@include breakpoint-up(medium) {
+@include breakpoint-up(large) {
     .hero {
-        display: flex;
-        min-height: 42.5rem;
+        .container {
+            display: flex;
+            min-height: 42.5rem;
+        }
 
         &-image {
             order: 2;
             flex: 3;
-            background: 0;
-            background-image: url(/images/bg-intro-desktop.svg);
-            background-position: left 74%;
+            background-image: none;
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                background-image: url(/images/image-mockups.png);
+                background-repeat: no-repeat;
+                background-size: 95%;
+                height: 125%;
+                left: 22%;
+                width: 120%;
+                background-position: 80% 101%;
+
+                // right phone cut
+                // width: 125%;
+                // background-position: 420% 81%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url(/images/bg-intro-desktop.svg);
+                width: 125%;
+                height: 100%;
+                background-size: 150%;
+                background-position: 3% 69%;
+            }
         }
 
         &-text {
             flex: 2;
             text-align: left;
+            align-self: center;
+
+            h1 {
+                font-size: 3.25rem;
+            }
+
+            p {
+                width: 42ch;
+            }
         }
     }
 }
