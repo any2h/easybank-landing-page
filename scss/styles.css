@@ -241,7 +241,7 @@ select {
   height: 4px;
   left: 0;
   right: 0;
-  bottom: -30px;
+  bottom: -31.5px;
   background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
