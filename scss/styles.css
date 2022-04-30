@@ -293,9 +293,9 @@ select {
   content: "";
   position: absolute;
   background-image: url(/images/image-mockups.png);
-  background-position: center bottom 10%;
+  background-position: center bottom 11%;
   background-repeat: no-repeat;
-  background-size: 95%;
+  background-size: 93%;
   height: 100%;
   width: 100%;
 }
@@ -311,6 +311,18 @@ select {
   margin-top: 2.5rem;
 }
 
+@media (min-width: 40em) {
+  .hero-image {
+    min-height: 28.125rem;
+    background-position: center 65%;
+  }
+  .hero-image::before {
+    background-size: 55%;
+  }
+  .hero-text p {
+    width: 42ch;
+  }
+}
 @media (min-width: 64em) {
   .hero .container {
     display: flex;
@@ -350,7 +362,7 @@ select {
   .hero-text h1 {
     font-size: 3.25rem;
   }
-  .hero-text p {
-    width: 42ch;
-  }
+}
+.features {
+  background-color: hsl(220deg, 16%, 96%);
 }/*# sourceMappingURL=styles.css.map */

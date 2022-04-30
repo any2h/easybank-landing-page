@@ -13,9 +13,9 @@
             content: '';
             position: absolute;
             background-image: url(/images/image-mockups.png);
-            background-position: center bottom 10%;
+            background-position: center bottom 11%;
             background-repeat: no-repeat;
-            background-size: 95%;
+            background-size: 93%;
             height: 100%;
             width: 100%;
         }
@@ -32,6 +32,25 @@
 
         button {
             margin-top: 2.5rem;
+        }
+    }
+}
+
+@include breakpoint-up(medium) {
+    .hero {
+        &-image {
+            min-height: 28.125rem;
+            background-position: center 65%;
+
+            &::before {
+                background-size: 55%;
+            }
+        }
+
+        &-text {
+            p {
+                width: 42ch;
+            }
         }
     }
 }
@@ -85,9 +104,7 @@
                 font-size: 3.25rem;
             }
 
-            p {
-                width: 42ch;
-            }
+
         }
     }
 }
