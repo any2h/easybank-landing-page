@@ -216,14 +216,14 @@ select {
 }
 .header nav.open .mobile-nav-toggle > span {
   opacity: 1;
-  transform: rotate(37deg) translate(0, -1px);
+  transform: rotate(45deg);
 }
 .header nav.open .mobile-nav-toggle > span:nth-child(2) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 .header nav.open .mobile-nav-toggle > span:last-child {
-  transform: rotate(-37deg) translate(0, -1px);
+  transform: rotate(-45deg);
 }
 .header-links {
   gap: 2rem;
@@ -266,14 +266,8 @@ select {
   width: 1.5rem;
   height: 2px;
   background-color: hsl(233deg, 26%, 24%);
-  transform-origin: 4px 0px;
+  transform-origin: 3px 1px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-.header .mobile-nav-toggle > span:first-child {
-  transform-origin: 0% 0%;
-}
-.header .mobile-nav-toggle > span:nth-child(2) {
-  transform-origin: 0% 100%;
 }
 .header .overlay {
   visibility: hidden;

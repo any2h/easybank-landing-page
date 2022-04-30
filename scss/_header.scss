@@ -30,7 +30,7 @@
             .mobile-nav-toggle {
                 > span {
                     opacity: 1;
-                    transform: rotate(37deg) translate(0, -1px);
+                    transform: rotate(45deg);
                 }
     
                 > span:nth-child(2) {
@@ -39,7 +39,7 @@
                 }
     
                 > span:last-child {
-                    transform: rotate(-37deg) translate(0, -1px);
+                    transform: rotate(-45deg);
                 }
             }
         }
@@ -89,34 +89,14 @@
             width: 1.5rem;
             height: 2px;
             background-color: $dark-blue;
-            transform-origin: 4px 0px;
+            transform-origin: 3px 1px;
             transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                         // background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                         opacity 0.55s ease;
         }
 
-        > span:first-child {
-            transform-origin: 0% 0%;
-        }
-
-        > span:nth-child(2) {
-            transform-origin: 0% 100%;
-        }
-
-        // &.open {
-        //     > span {
-        //         opacity: 1;
-        //         transform: rotate(37deg) translate(0, -1px);
-        //     }
-
-        //     > span:nth-child(2) {
-        //         opacity: 0;
-        //         transform: rotate(0deg) scale(0.2, 0.2);
-        //     }
-
-        //     > span:last-child {
-        //         transform: rotate(-37deg) translate(0, -1px);
-        //     }
+        // > span:nth-child(2) {
+        //     transform-origin: 0% 100%;
         // }
     }
 
