@@ -1,3 +1,29 @@
 .features {
     background-color: $light-grayish-blue;
+    text-align: center;
+
+    p {
+        font-size: $font-sm;
+    }
+
+    .container {
+        padding: 4rem 1.5rem;
+    }
+
+    &-info {
+        gap: 2.25rem;
+    }
+
+    &-item {
+        align-items: center;
+
+        .features-icon {
+            margin-bottom: .75rem;
+        }
+
+        .features-title {
+            color: $dark-blue;
+            font-weight: 300;
+        }
+    }
 }
