@@ -105,7 +105,7 @@ dd {
 
 h1, h2, h3 {
   color: hsl(233deg, 26%, 24%);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
 }
 
@@ -367,6 +367,9 @@ select {
   background-color: hsl(220deg, 16%, 96%);
   text-align: center;
 }
+.features-intro h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+}
 .features-intro p {
   margin-top: 1.25rem;
   margin-bottom: 3.5rem;
@@ -393,6 +396,9 @@ select {
 }
 
 @media (min-width: 40em) {
+  .features-intro p {
+    margin-bottom: 4.5rem;
+  }
   .features-info {
     flex-flow: row wrap;
   }
@@ -404,10 +410,18 @@ select {
   .features {
     text-align: left;
   }
+  .features-intro p {
+    font-size: 1.125rem;
+    width: 60ch;
+    margin-top: 2rem;
+  }
   .features-info {
-    flex-direction: row;
+    flex-flow: row nowrap;
   }
   .features-item {
     align-items: start;
+  }
+  .features-item .features-title {
+    font-size: 1.375rem;
   }
 }/*# sourceMappingURL=styles.css.map */
