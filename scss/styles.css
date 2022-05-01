@@ -397,6 +397,7 @@ select {
 
 @media (min-width: 40em) {
   .features-intro p {
+    font-size: 1rem;
     margin-bottom: 4.5rem;
   }
   .features-info {
