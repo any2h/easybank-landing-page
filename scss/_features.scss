@@ -2,16 +2,24 @@
     background-color: $light-grayish-blue;
     text-align: center;
 
+    &-intro p {
+        margin-top: 1.25rem;
+        margin-bottom: 3.5rem;
+    }
+
     p {
         font-size: $font-sm;
+
     }
 
     .container {
-        padding: 4rem 1.5rem;
+        padding: clamp(4rem, 7vw, 6.875rem) 1.5rem;
+        // padding: clamp(4rem, 7vw, 6.875rem) clamp(1.5rem, 7vw, 6.875rem);
     }
 
     &-info {
-        gap: 2.25rem;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     &-item {
@@ -24,6 +32,32 @@
         .features-title {
             color: $dark-blue;
             font-weight: 300;
+        }
+    }
+}
+
+@include breakpoint-up(medium) {
+    .features {
+        &-info {
+            flex-flow: row wrap;
+        }
+
+        &-item {
+            flex-basis: 47%;
+        }
+    }
+}
+
+@include breakpoint-up(large) {
+    .features {
+        text-align: left;
+
+        &-info {
+            flex-direction: row;
+        }
+
+        &-item {
+            align-items: start;
         }
     }
 }
