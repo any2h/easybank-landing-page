@@ -25,6 +25,10 @@ h1, h2, h3 {
     line-height: 1.2;
 }
 
+h2 {
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -41,6 +45,7 @@ body {
     min-height: 100vh;
     font-family: 'Public Sans', sans-serif;
     font-size: $font-med;
+    // font-weight: 300;
     color: $grayish-blue;
     text-rendering: optimizeSpeed;
     line-height: 1.5;

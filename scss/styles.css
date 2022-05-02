@@ -109,6 +109,10 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
@@ -367,12 +371,12 @@ select {
   background-color: hsl(220deg, 16%, 96%);
   text-align: center;
 }
-.features-intro h2 {
-  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
-}
-.features-intro p {
-  margin-top: 1.25rem;
+.features-intro {
   margin-bottom: 3.5rem;
+}
+.features-intro h2 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
 }
 .features p {
   font-size: 0.875rem;
@@ -396,9 +400,11 @@ select {
 }
 
 @media (min-width: 40em) {
+  .features-intro {
+    margin-bottom: 4.5rem;
+  }
   .features-intro p {
     font-size: 1rem;
-    margin-bottom: 4.5rem;
   }
   .features-info {
     flex-flow: row wrap;
@@ -411,10 +417,12 @@ select {
   .features {
     text-align: left;
   }
+  .features-intro h2 {
+    margin-bottom: 2rem;
+  }
   .features-intro p {
     font-size: 1.125rem;
     width: 60ch;
-    margin-top: 2rem;
   }
   .features-info {
     flex-flow: row nowrap;
@@ -422,7 +430,16 @@ select {
   .features-item {
     align-items: start;
   }
+  .features-item .features-icon {
+    margin-bottom: 1.5rem;
+  }
   .features-item .features-title {
     font-size: 1.375rem;
   }
+}
+.articles {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.articles .container {
+  padding: clamp(4rem, 7vw, 6rem) 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

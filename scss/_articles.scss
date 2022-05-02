@@ -1,0 +1,15 @@
+.articles {
+    background-color: $very-light-gray;
+
+    .container {
+        padding: clamp(4rem, 7vw, 6rem) 1.5rem;
+    }
+
+    &-wrapper {
+        // display: grid;
+    }
+
+    &-item {
+
+    }
+}

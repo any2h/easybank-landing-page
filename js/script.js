@@ -1,10 +1,11 @@
-const navToggle = document.querySelector('.mobile-nav-toggle'),
-    nav = document.querySelector('.header nav'),
-    links = document.querySelector('.header-links'),
-    overlay = document.querySelector('.overlay');
+const body =  document.querySelector('body'),
+    navToggle = body.querySelector('.mobile-nav-toggle'),
+    nav = body.querySelector('.header nav'),
+    links = body.querySelector('.header-links'),
+    overlay = body.querySelector('.overlay');
 
 navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('overflow-hidden');
+    body.classList.toggle('overflow-hidden');
 
     if (nav.classList.contains('open')) {
         nav.classList.remove('open');
