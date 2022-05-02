@@ -344,11 +344,11 @@ select {
     z-index: 1;
     background-image: url(/images/image-mockups.png);
     background-repeat: no-repeat;
-    background-size: 95%;
+    background-size: 94%;
     height: 125%;
     left: 22%;
     width: 120%;
-    background-position: 80% 101%;
+    background-position: 80% 108%;
   }
   .hero-image::after {
     content: "";
