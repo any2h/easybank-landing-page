@@ -62,6 +62,7 @@ a:not([class]) {
 
 a, a:visited, a:hover {
     text-decoration: none;
+    color: inherit;
 }
 
 /* Make images easier to work with */
