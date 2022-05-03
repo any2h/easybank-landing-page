@@ -344,8 +344,8 @@ select {
     z-index: 1;
     background-image: url(/images/image-mockups.png);
     background-repeat: no-repeat;
-    background-size: 94%;
-    height: 125%;
+    background-size: 93%;
+    height: 124%;
     left: 22%;
     width: 120%;
     background-position: 80% 108%;
@@ -495,6 +495,10 @@ select {
 .articles-item .articles-text .articles-title {
   font-size: 1rem;
   color: hsl(233deg, 26%, 24%);
+  transition: color 0.15s ease-in-out;
+}
+.articles-item .articles-text .articles-title:hover {
+  color: hsl(136deg, 65%, 51%);
 }
 .articles-item .articles-text p {
   font-size: 0.875rem;
