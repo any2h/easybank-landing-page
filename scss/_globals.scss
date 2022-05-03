@@ -106,7 +106,7 @@ select {
     border: 0;
     border-radius: 50px;
     background-image: linear-gradient(to right, $lime-green, $bright-cyan);
-    transition: opacity .3s ease-in-out;
+    transition: opacity .2s ease-in-out;
 
     &:hover {
         opacity: .6;
