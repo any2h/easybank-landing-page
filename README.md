@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/any2h/easybank-landing-page)
-- Live Site URL: [Add live site URL here](https://any2h.github.io/easybank-landing-page/)
+- Solution URL: [GitHub](https://github.com/any2h/easybank-landing-page)
+- Live Site URL: [GitHub Pages](https://any2h.github.io/easybank-landing-page/)
 
 ## My process
 
