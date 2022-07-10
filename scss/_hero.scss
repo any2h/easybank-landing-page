@@ -1,7 +1,7 @@
 .hero {
     background-color: $very-light-gray;
 
-    &-image {
+    &__image {
         position: relative;
         background-image: url(https://any2h.github.io/easybank-landing-page/images/bg-intro-mobile.svg);
         background-position: center;
@@ -21,7 +21,7 @@
         }
     }
 
-    &-text {
+    &__text {
         --flow-space: 1.5rem;
         text-align: center;
         padding: 2.25rem 1.5rem;
@@ -38,7 +38,7 @@
 
 @include breakpoint-up(medium) {
     .hero {
-        &-image {
+        &__image {
             min-height: 28.125rem;
             background-position: center 65%;
 
@@ -47,7 +47,7 @@
             }
         }
 
-        &-text {
+        &__text {
             p {
                 width: 42ch;
                 margin-inline: auto;
@@ -63,7 +63,7 @@
             min-height: 42.5rem;
         }
 
-        &-image {
+        &__image {
             order: 2;
             flex: 3;
             background-image: none;
@@ -96,7 +96,7 @@
             }
         }
 
-        &-text {
+        &__text {
             flex: 2;
             text-align: left;
             align-self: center;

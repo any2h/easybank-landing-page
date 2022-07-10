@@ -2,7 +2,7 @@
     background-color: $light-grayish-blue;
     text-align: center;
 
-    &-intro {
+    &__intro {
         margin-bottom: 3.5rem;
 
         h2 {
@@ -19,12 +19,12 @@
         padding: clamp(4rem, 7vw, 6.875rem) 1.5rem;
     }
 
-    &-info {
+    &__info {
         flex-direction: column;
         gap: 2rem;
     }
 
-    &-item {
+    &__item {
         align-items: center;
 
         .features-icon {
@@ -41,18 +41,18 @@
 @include breakpoint-up(medium) {
     .features {
 
-        &-intro {
+        &__intro {
             p {
                 font-size: 1rem;
                 
             }
         }
 
-        &-info {
+        &__info {
             flex-flow: row wrap;
         }
 
-        &-item {
+        &__item {
             flex-basis: 47%;
         }
     }
@@ -62,7 +62,7 @@
     .features {
         text-align: left;
 
-        &-intro {
+        &__intro {
             margin-bottom: 4.5rem;
 
             h2 {
@@ -75,11 +75,11 @@
             }
         }
 
-        &-info {
+        &__info {
             flex-flow: row nowrap;
         }
 
-        &-item {
+        &__item {
             align-items: start;
 
             .features-icon {

@@ -16,7 +16,7 @@
         padding: clamp(4rem, 7vw, 6rem) 1.5rem;
     }
 
-    &-wrapper {
+    &__wrapper {
         display: grid;
         gap: 1.5rem;
 
@@ -30,7 +30,7 @@
         }
     }
 
-    &-item {
+    &__item {
         background-color: #FFF;
         border-radius: 5px;
         overflow: hidden;
@@ -41,21 +41,21 @@
             transform: scale(1.05);
         }
 
-        .articles-image {
+        .articles__image {
             height: 12rem;
             background-position: center;
             background-size: cover;
         }
 
-        .articles-text {
+        .articles__text {
             --flow-space: .75rem;
             padding: 1.5rem;
 
-            .articles-author {
+            .articles__author {
                 font-size: .625rem;
             }
 
-            .articles-title {
+            .articles__title {
                 font-size: 1rem;
                 color: $dark-blue;
                 transition: color .15s ease-in-out;
