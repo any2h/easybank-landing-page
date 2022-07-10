@@ -168,7 +168,6 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
 *::before,
 *::after {
@@ -230,21 +229,21 @@ select {
 .header nav.open .mobile-nav-toggle > span:last-child {
   transform: rotate(-45deg);
 }
-.header-links {
+.header__links {
   gap: 2rem;
 }
-.header-links > a {
+.header__links > a {
   position: relative;
   color: hsl(233deg, 8%, 62%);
   transition: color 0.3s ease-in-out;
 }
 @media (max-width: 63.9375em) {
-  .header-links > a {
+  .header__links > a {
     color: hsl(233deg, 26%, 24%);
     font-size: 1.125rem;
   }
 }
-.header-links > a::before {
+.header__links > a::before {
   content: "";
   position: absolute;
   display: block;
@@ -256,10 +255,10 @@ select {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-.header-links > a:hover {
+.header__links > a:hover {
   color: hsl(233deg, 26%, 24%);
 }
-.header-links > a:hover::before {
+.header__links > a:hover::before {
   opacity: 1;
 }
 .header .mobile-nav-toggle {
