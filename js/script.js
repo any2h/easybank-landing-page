@@ -1,7 +1,7 @@
 const body =  document.querySelector('body'),
     navToggle = body.querySelector('.mobile-nav-toggle'),
     nav = body.querySelector('.header nav'),
-    links = body.querySelector('.header-links'),
+    links = body.querySelector('.header__links'),
     overlay = body.querySelector('.overlay');
 
 navToggle.addEventListener('click', () => {
