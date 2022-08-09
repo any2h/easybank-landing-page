@@ -27,11 +27,13 @@
     &__item {
         align-items: center;
 
-        .features-icon {
+        .features__icon {
             margin-bottom: .75rem;
+            width: 72px;
+            height: 72px;
         }
 
-        .features-title {
+        .features__title {
             color: $dark-blue;
             font-weight: 300;
         }
@@ -82,11 +84,11 @@
         &__item {
             align-items: start;
 
-            .features-icon {
+            .features__icon {
                 margin-bottom: 1.5rem;
             }
 
-            .features-title {
+            .features__title {
                 font-size: 1.375rem;
             }
         }

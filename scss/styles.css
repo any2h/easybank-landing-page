@@ -286,7 +286,7 @@ select {
 }
 .hero__image {
   position: relative;
-  background-image: url(https://any2h.github.io/easybank-landing-page/images/bg-intro-mobile.svg);
+  background-image: url(/images/bg-intro-mobile.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -295,7 +295,7 @@ select {
 .hero__image::before {
   content: "";
   position: absolute;
-  background-image: url(https://any2h.github.io/easybank-landing-page/images/image-mockups.png);
+  background-image: url(/images/image-mockups.png);
   background-position: center bottom 11%;
   background-repeat: no-repeat;
   background-size: 93%;
@@ -341,7 +341,7 @@ select {
     content: "";
     position: absolute;
     z-index: 1;
-    background-image: url(https://any2h.github.io/easybank-landing-page/images/image-mockups.png);
+    background-image: url(/images/image-mockups.png);
     background-repeat: no-repeat;
     background-size: 93%;
     height: 124%;
@@ -352,7 +352,7 @@ select {
   .hero__image::after {
     content: "";
     position: absolute;
-    background-image: url(https://any2h.github.io/easybank-landing-page/images/bg-intro-desktop.svg);
+    background-image: url(/images/bg-intro-desktop.svg);
     width: 125%;
     height: 100%;
     background-size: 150%;
@@ -391,10 +391,12 @@ select {
 .features__item {
   align-items: center;
 }
-.features__item .features-icon {
+.features__item .features__icon {
   margin-bottom: 0.75rem;
+  width: 72px;
+  height: 72px;
 }
-.features__item .features-title {
+.features__item .features__title {
   color: hsl(233deg, 26%, 24%);
   font-weight: 300;
 }
@@ -430,10 +432,10 @@ select {
   .features__item {
     align-items: start;
   }
-  .features__item .features-icon {
+  .features__item .features__icon {
     margin-bottom: 1.5rem;
   }
-  .features__item .features-title {
+  .features__item .features__title {
     font-size: 1.375rem;
   }
 }
