@@ -29,8 +29,11 @@
 
         .features__icon {
             margin-bottom: .75rem;
-            width: 72px;
-            height: 72px;
+
+            > img {
+                width: 72px;
+                height: 72px;
+            }
         }
 
         .features__title {

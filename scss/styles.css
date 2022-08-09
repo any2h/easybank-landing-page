@@ -393,6 +393,8 @@ select {
 }
 .features__item .features__icon {
   margin-bottom: 0.75rem;
+}
+.features__item .features__icon > img {
   width: 72px;
   height: 72px;
 }

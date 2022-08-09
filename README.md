@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/any2h/easybank-landing-page)
-- Live Site URL: [GitHub Pages](https://any2h.github.io/easybank-landing-page/)
+- Live Site URL: [Netlify](https://any2h-easybank-landing-page.netlify.app/)
 
 ## My process
 
